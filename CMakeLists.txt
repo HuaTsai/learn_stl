@@ -14,3 +14,5 @@ foreach(chapter RANGE 1 6)
     endif()
   endforeach(file)
 endforeach(chapter)
+
+target_link_libraries(ch5sharedptr3 rt)
