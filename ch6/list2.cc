@@ -9,9 +9,9 @@ int main() {
     coll.push_back(c);
   }
 
-  while (!coll.empty()) {
-    cout << coll.front() << ' ';
-    coll.pop_front();
+  list<char>::const_iterator pos;
+  for (pos = coll.begin(); pos != coll.end(); ++pos) {
+    cout << *pos << ' ';
   }
   cout << endl;
 }
