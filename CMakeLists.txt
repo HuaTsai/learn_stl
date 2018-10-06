@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 2.8)
 project(learn_stl)
 set(CMAKE_CXX_STANDARD 11)
 
+include_directories(ch6)
+
 file(GLOB_RECURSE ALL_SRCS "*.cc")
 foreach(FILE_PATH ${ALL_SRCS})
   get_filename_component(DIRECTORY_PATH ${FILE_PATH} PATH)
